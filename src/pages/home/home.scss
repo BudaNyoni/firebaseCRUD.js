@@ -1,0 +1,23 @@
+page-home {
+    .background{
+        background-image: 
+         url('../../assets/70db3bf4821513f36ad951bbf35e8c5d.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ion-card.card{
+        opacity: 0.90;
+        box-shadow: 2px 2px 4px;
+        border-radius: 15px;
+    }
+h2{
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 4px;
+    color:wheat;
+    border-radius: 15px;
+    text-align: center;
+}
+ion-title{
+    text-align: center;
+}
+}

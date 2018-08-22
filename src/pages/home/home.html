@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background" >
+
+  <ion-fab  top right edge>
+    <button ion-fab mini color = "color" (click) = "Add()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+<br>
+<br>
+<ion-list>
+<ion-card  *ngFor = 'let F of itemlist; let i = index'>
+  <ion-card-header>
+    Your Details
+  </ion-card-header>
+
+  <ion-card-content >
+
+<ion-item>
+  <ion-thumbnail>
+    <h3>{{F.item}}</h3>
+</ion-thumbnail>
+</ion-item>
+
+</ion-card-content>
+
+<button ion-button clear (click) = "Delete(F.key)" >Delete</button>
+
+<button ion-button clear (click) = "update(F.key)" >Update</button>
+
+
+</ion-card>
+</ion-list>
+</ion-content>
